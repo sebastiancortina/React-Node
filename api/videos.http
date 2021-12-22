@@ -1,0 +1,30 @@
+@api = http://localhost:5000
+
+###
+GET {{api}}/videos
+
+###
+GET {{api}}/videos/61bcc23277f4027bb3f62084
+
+### Create a video
+POST {{api}}/videos
+Content-Type: application/json
+
+{
+    "url": "https://www.youtube.com/watch?v=bDmzGLrdjxQ&list=RDo7iL2KzDh38&index=27&ab_channel=AlanWalker",
+    "title": "Alam walker fade",
+    "description": " musica"
+}
+
+###
+DELETE  {{api}}/videos/61bcc27a77f4027bb3f62089
+
+
+###
+
+PUT {{api}}/videos/61bcdd6daf716663901a3fd3
+Content-Type: application/json
+
+{
+    "title": " Alan spect"
+}
